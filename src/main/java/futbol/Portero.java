@@ -13,11 +13,12 @@ public class Portero extends Futbolista{
 		return ("El futbolista "+this.getNombre()+" tiene "+this.getEdad()+", y juega de "+this.getPosicion()+" con el dorsal "+this.getDorsal()+". Le han marcado "+this.getGolesRecibidos());
 	}
 	
-	public int compareTo(Futbolista f){
+	public int compareTo(Object f){
 		Portero por = (Portero)f;
 		return Math.abs(this.getGolesRecibidos()-por.getGolesRecibidos());
 	}
 	
+	@Override
 	public boolean jugarConLasManos(){
 		return true;
 	}
