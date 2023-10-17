@@ -27,7 +27,7 @@ public abstract class Futbolista implements Comparable<Futbolista>{
     public abstract boolean jugarConLasManos();
 
     public String getNombre(){
-        return this.nombre;
+        return nombre;
     }
 
     public void setNombre(String nombre){
@@ -35,7 +35,7 @@ public abstract class Futbolista implements Comparable<Futbolista>{
     }
 
     public int getEdad(){
-        return this.edad;
+        return edad;
     }
 
     public void setEdad(int edad){

@@ -27,7 +27,7 @@ public class Jugador extends Futbolista{
 	}
 	
 	public short getGolesMarcados(){
-		return this.golesMarcados;
+		return golesMarcados;
 	}
 
 	public void setGolesMarcados(short golesMarcados){
@@ -35,7 +35,7 @@ public class Jugador extends Futbolista{
 	}
 
 	public byte getDorsal(){
-		return this.dorsal;
+		return dorsal;
 
 	}
 	public void setDorsal(byte dorsal){

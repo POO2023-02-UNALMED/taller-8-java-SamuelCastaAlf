@@ -22,7 +22,7 @@ public class Portero extends Futbolista{
 	}
 
 	public short getGolesRecibidos(){
-		return this.golesRecibidos;
+		return golesRecibidos;
 	}
 
 	public void setGolesRecibidos(short golesRecibidos){
@@ -30,7 +30,7 @@ public class Portero extends Futbolista{
 	}
 
 	public byte getDorsal(){
-		return this.dorsal;
+		return dorsal;
 	}
 
 	public void setDorsal(byte dorsal){
