@@ -18,7 +18,7 @@ public abstract class Futbolista implements Comparable<Object>{
 
     @Override
     public String toString(){
-        return ("El futbolista "+this.getNombre()+" tiene "+this.getEdad()+" años, y juega de "+this.getPosicion());
+        return ("El futbolista "+this.getNombre()+" tiene "+this.getEdad()+", y juega de "+this.getPosicion());
     }
 
     public boolean equals(Futbolista f){
@@ -28,8 +28,9 @@ public abstract class Futbolista implements Comparable<Object>{
     public abstract boolean jugarConLasManos();
 
     @Override
-    public int compareTo(Object o) {
-        return Math.abs(this.edad - ((Futbolista) o).edad);
+    public int compareTo(Object f){
+        Futbolista fut=(Futbolista)f;
+        return Math.abs(this.getEdad()-fut.getEdad());
     }
 
     public String getNombre(){
@@ -49,6 +50,6 @@ public abstract class Futbolista implements Comparable<Object>{
     }
 
     public String getPosicion(){
-        return this.posicion;
+        return posicion;
     }
 }
