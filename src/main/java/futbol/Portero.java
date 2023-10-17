@@ -8,7 +8,8 @@ public class Portero extends Futbolista{
 		this.golesRecibidos = golesRecibidos;
 		this.dorsal = dorsal;
 		}
-
+	
+	@Override
 	public String toString(){
 		return ("El futbolista "+this.getNombre()+" tiene "+this.getEdad()+", y juega de "+this.getPosicion()+" con el dorsal "+this.getDorsal()+". Le han marcado "+this.getGolesRecibidos());
 	}

@@ -4,7 +4,7 @@ public abstract class Futbolista implements Comparable<Object>{
     private int edad;
     private final String posicion;
 
-    Futbolista(String nombre,int edad,String posicion){
+    public Futbolista(String nombre,int edad,String posicion){
         this.nombre = nombre;
         this.edad = edad;
         this.posicion = posicion;
@@ -26,6 +26,11 @@ public abstract class Futbolista implements Comparable<Object>{
     }
 
     public abstract boolean jugarConLasManos();
+
+    @Override
+    public int compareTo(Object o) {
+        return Math.abs(this.edad - ((Futbolista) o).edad);
+    }
 
     public String getNombre(){
         return nombre;
